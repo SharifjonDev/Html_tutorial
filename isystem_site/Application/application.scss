@@ -1,0 +1,109 @@
+@import "../global_styles/toRemConvertor";
+@import "../global_styles/colorStyle";
+@import "../global_styles/fontStyle";
+@import "../global_styles/navbar";
+@import "../global_styles/footer";
+@import "../global_styles/button";
+body {
+  main {
+    font-family: "Mark Pro";
+    padding-top: toRem(69);
+    .container {
+      .row {
+        .col-12 {
+          .signUp_title {
+            color: $black;
+            h2 {
+              font-family: "Mark Pro Bold";
+              font-weight: 700;
+              font-size: toRem(40);
+              line-height: 2rem;
+              letter-spacing: 0.04em;
+              margin-bottom: toRem(25);
+            }
+            p {
+              font-weight: 400;
+              font-size: 1rem;
+              line-height: toRem(25);
+              width: toRem(542);
+              letter-spacing: 0.025em;
+              margin-bottom: 0;
+            }
+          }
+        }
+        .col-12 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+          .signUp_information {
+            width: toRem(550);
+            border-radius: toRem(10);
+            background: $yellow;
+            padding: 0 toRem(40);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: toRem(80) 0;
+            .img_header {
+              width: toRem(180);
+              height: toRem(180);
+            }
+            .form_content {
+              label {
+                display: none;
+              }
+              input {
+                width: 100%;
+                border: none;
+                outline: none;
+                border-radius: toRem(5);
+                margin-bottom: toRem(20);
+                padding: toRem(15) toRem(20);
+                //Text
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: toRem(10);
+                letter-spacing: 0.025em;
+                color: $black;
+              }
+              .form-select {
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: toRem(15);
+                letter-spacing: 0.025em;
+                padding: toRem(15) toRem(20);
+                border-radius: toRem(5);
+                margin-bottom: toRem(50);
+              }
+            }
+            a {
+              width: 100%;
+              text-decoration: none;
+              .btn_sent {
+                @include Button(
+                  "Mark Pro Medium",
+                  500,
+                  16,
+                  10,
+                  $yellow,
+                  $black,
+                  10,
+                  toRem(15) 0,
+                  toRem(15) 0
+                );
+                width: 100%;
+                span {
+                  color: $white;
+                  font-size: toRem(20);
+                  margin-left: toRem(10);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

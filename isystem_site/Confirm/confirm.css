@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@font-face {
+  font-family: "Mark Pro";
+  src: url("//db.onlinewebfonts.com/t/7200c6dd8ac604abe09f5159e53a40c0.eot");
+  src: url("//db.onlinewebfonts.com/t/7200c6dd8ac604abe09f5159e53a40c0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7200c6dd8ac604abe09f5159e53a40c0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7200c6dd8ac604abe09f5159e53a40c0.woff") format("woff"), url("//db.onlinewebfonts.com/t/7200c6dd8ac604abe09f5159e53a40c0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7200c6dd8ac604abe09f5159e53a40c0.svg#Mark Pro") format("svg");
+}
+
+@font-face {
+  font-family: "Mark Pro Medium";
+  src: url("//db.onlinewebfonts.com/t/a05747eaf46bae50f19dfa950b86befd.eot");
+  src: url("//db.onlinewebfonts.com/t/a05747eaf46bae50f19dfa950b86befd.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a05747eaf46bae50f19dfa950b86befd.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a05747eaf46bae50f19dfa950b86befd.woff") format("woff"), url("//db.onlinewebfonts.com/t/a05747eaf46bae50f19dfa950b86befd.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a05747eaf46bae50f19dfa950b86befd.svg#Mark Pro Medium") format("svg");
+}
+
+@font-face {
+  font-family: "Mark Pro Heavy";
+  src: url("//db.onlinewebfonts.com/t/72112afab388987941068c3f7a741a53.eot");
+  src: url("//db.onlinewebfonts.com/t/72112afab388987941068c3f7a741a53.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/72112afab388987941068c3f7a741a53.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/72112afab388987941068c3f7a741a53.woff") format("woff"), url("//db.onlinewebfonts.com/t/72112afab388987941068c3f7a741a53.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/72112afab388987941068c3f7a741a53.svg#Mark Pro Heavy") format("svg");
+}
+
+@font-face {
+  font-family: "Mark Pro Bold";
+  src: url("//db.onlinewebfonts.com/t/01d273202731e44f0f1187f3afcaf156.eot");
+  src: url("//db.onlinewebfonts.com/t/01d273202731e44f0f1187f3afcaf156.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/01d273202731e44f0f1187f3afcaf156.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/01d273202731e44f0f1187f3afcaf156.woff") format("woff"), url("//db.onlinewebfonts.com/t/01d273202731e44f0f1187f3afcaf156.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/01d273202731e44f0f1187f3afcaf156.svg#Mark Pro") format("svg");
+}
+
+@font-face {
+  font-family: "Mark Pro";
+  src: url("//db.onlinewebfonts.com/t/7200c6dd8ac604abe09f5159e53a40c0.eot");
+  src: url("//db.onlinewebfonts.com/t/7200c6dd8ac604abe09f5159e53a40c0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7200c6dd8ac604abe09f5159e53a40c0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7200c6dd8ac604abe09f5159e53a40c0.woff") format("woff"), url("//db.onlinewebfonts.com/t/7200c6dd8ac604abe09f5159e53a40c0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7200c6dd8ac604abe09f5159e53a40c0.svg#Mark Pro") format("svg");
+}
+
+@font-face {
+  font-family: "Mark Pro Medium";
+  src: url("//db.onlinewebfonts.com/t/a05747eaf46bae50f19dfa950b86befd.eot");
+  src: url("//db.onlinewebfonts.com/t/a05747eaf46bae50f19dfa950b86befd.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a05747eaf46bae50f19dfa950b86befd.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a05747eaf46bae50f19dfa950b86befd.woff") format("woff"), url("//db.onlinewebfonts.com/t/a05747eaf46bae50f19dfa950b86befd.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a05747eaf46bae50f19dfa950b86befd.svg#Mark Pro Medium") format("svg");
+}
+
+@font-face {
+  font-family: "Mark Pro Heavy";
+  src: url("//db.onlinewebfonts.com/t/72112afab388987941068c3f7a741a53.eot");
+  src: url("//db.onlinewebfonts.com/t/72112afab388987941068c3f7a741a53.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/72112afab388987941068c3f7a741a53.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/72112afab388987941068c3f7a741a53.woff") format("woff"), url("//db.onlinewebfonts.com/t/72112afab388987941068c3f7a741a53.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/72112afab388987941068c3f7a741a53.svg#Mark Pro Heavy") format("svg");
+}
+
+@font-face {
+  font-family: "Mark Pro Bold";
+  src: url("//db.onlinewebfonts.com/t/01d273202731e44f0f1187f3afcaf156.eot");
+  src: url("//db.onlinewebfonts.com/t/01d273202731e44f0f1187f3afcaf156.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/01d273202731e44f0f1187f3afcaf156.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/01d273202731e44f0f1187f3afcaf156.woff") format("woff"), url("//db.onlinewebfonts.com/t/01d273202731e44f0f1187f3afcaf156.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/01d273202731e44f0f1187f3afcaf156.svg#Mark Pro") format("svg");
+}
+
+body .navbar {
+  padding-bottom: 0;
+  padding-top: 3.75rem;
+}
+
+body .navbar .container .navbar-brand {
+  width: 10.625rem;
+  height: auto;
+  margin-right: 2.8125rem;
+  padding: 0;
+}
+
+body .navbar .container .collapse .navbar-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .navbar .container .collapse .navbar-nav .left-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .navbar .container .collapse .navbar-nav .left-line .nav-item {
+  position: relative;
+  margin-right: 3.75rem;
+}
+
+body .navbar .container .collapse .navbar-nav .left-line .nav-item .nav-link {
+  font-family: "Mark Pro";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  padding: 0;
+  color: #000;
+}
+
+body .navbar .container .collapse .navbar-nav .left-line .nav-item .nav-link::before {
+  top: 0.3125rem;
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  border-bottom: 0.1875rem solid #ffcf23;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  left: 50%;
+  cursor: pointer;
+}
+
+body .navbar .container .collapse .navbar-nav .left-line .nav-item .nav-link:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+body .navbar .container .collapse .navbar-nav .right-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  font-family: "Mark Pro";
+}
+
+body .navbar .container .collapse .navbar-nav .right-line .nav-item {
+  margin-left: 3.75rem;
+}
+
+body .navbar .container .collapse .navbar-nav .right-line .nav-item:hover > .nav-link {
+  color: #ffcf23 !important;
+}
+
+body .navbar .container .collapse .navbar-nav .right-line .nav-item .nav-link {
+  color: #000;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+body .navbar .container .collapse .navbar-nav .right-line .nav-item.dropdown .dropdown-menu {
+  padding: 0;
+  min-width: 1.875rem;
+  background: transparent;
+  border: 0.0625rem solid #ffcf23;
+}
+
+body .navbar .container .collapse .navbar-nav .right-line .nav-item.dropdown .dropdown-menu .dropdown-item {
+  color: #fff;
+}
+
+body .navbar .container .collapse .navbar-nav .right-line .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+  color: #000;
+  background: #ffcf23;
+}
+
+body .navbar .container .collapse .navbar-nav .right-line .nav-item.dropdown .dropdown-menu .dropdown-item.active {
+  background: transparent;
+}
+
+body .navbar .container .collapse .navbar-nav .right-line .nav-item.dropdown .dropdown-menu .dropdown-item.active:hover {
+  background: #ffcf23;
+}
+
+body {
+  font-family: "Mark Pro";
+}
+
+body header {
+  padding: 10.625rem 0 12.5rem 0;
+}
+
+body header .container .row .col-5 .login_content {
+  width: 25rem;
+  background: #fafafa;
+}
+
+body header .container .row .col-5 .login_content .login_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2.1875rem 3.125rem 1.75rem 3.125rem;
+}
+
+body header .container .row .col-5 .login_content .login_header .title_info {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+body header .container .row .col-5 .login_content .login_header .title_info h5 {
+  font-family: "Mark Pro Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5625rem;
+  color: #000;
+  margin: 0;
+}
+
+body header .container .row .col-5 .login_content .login_header .title_info h4 {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5625rem;
+  line-height: 0.8125rem;
+  color: #565656;
+  margin: 0;
+}
+
+body header .container .row .col-5 .login_content .login_header label {
+  font-family: "Mark Pro";
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.1875rem;
+  color: #7f7f7f;
+}
+
+body header .container .row .col-5 .login_content .login_header label p {
+  color: #000;
+  margin: 0.625rem 0 3.0625rem 0;
+}
+
+body header .container .row .col-5 .login_content .login_header input {
+  border: none;
+  outline: none;
+  padding-bottom: 0.5625rem;
+  background: transparent;
+  border-bottom: 0.7px solid rgba(127, 127, 127, 0.5);
+  font-family: "Mark Pro Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  line-height: 1.1875rem;
+  color: #000;
+}
+
+body header .container .row .col-5 .login_content .login_header .reliabe_check label {
+  margin-left: 4.3125rem;
+}
+
+body header .container .row .col-5 .login_content .login_header .title {
+  font-family: "Mark Pro Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #7f7f7f;
+  width: 221px;
+  margin: 2.4375rem 2.4375rem 1.625rem 2.5rem;
+}
+
+body header .container .row .col-5 .login_content .login_header a {
+  text-decoration: none;
+}
+
+body header .container .row .col-5 .login_content .login_header a .btn_entrance {
+  font-family: "Mark Pro";
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 0.625rem;
+  color: #000;
+  background: #ffcf23;
+  border: none;
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header .container .row .col-5 .login_content .login_header a .btn_entrance:hover {
+  padding: 1.25rem;
+}
+
+body header .container .row .col-5 .login_content .login_header a .btn_entrance span {
+  font-size: 1.5625rem;
+  color: #fff;
+}
+
+body header .container .row .col-5 .login_content .login_header a .btn_close {
+  font-family: "Mark Pro";
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 0.625rem;
+  color: #000;
+  background: #efefef;
+  border: none;
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1.5625rem;
+}
+
+body header .container .row .col-5 .login_content .login_header a .btn_close:hover {
+  padding: 1.25rem;
+}
+
+body header .container .row .col-5 .login_content .login_header a .btn_close span {
+  color: #ffcf23;
+  font-size: 2.1875rem;
+}
+
+body header .container .row .col-5 .login_img img {
+  width: 31.25rem;
+  height: 31.25rem;
+}
+/*# sourceMappingURL=confirm.css.map */

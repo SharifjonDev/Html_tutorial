@@ -1,0 +1,26 @@
+@mixin Button(
+  $Font,
+  $weight,
+  $size,
+  $line,
+  $color,
+  $Bcolor,
+  $radius,
+  $padding,
+  $Hpadding
+) {
+  font-family: $Font;
+  font-weight: $weight;
+  font-size: toRem($size);
+  line-height: toRem($line);
+  color: $color;
+  background: $Bcolor;
+  ///////////////////
+  border: none;
+  border-radius: toRem($radius);
+  padding: $padding;
+  transition: all 0.25s;
+  &:hover {
+    padding: $Hpadding;
+  }
+}

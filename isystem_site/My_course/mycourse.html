@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Isystem</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+    <link rel="stylesheet" href="../bootstrap-5.1.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./mycourse.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="logo">
+              <a href="../Home/index.html">
+                <img src="../Global_images/isystem_logo.svg" alt="isystem" />
+              </a>
+            </div>
+            <div class="d-flex align-items-start">
+              <div
+                class="nav flex-column nav-pills"
+                id="v-pills-tab"
+                role="tablist"
+                aria-orientation="vertical"
+              >
+                <button
+                  class="nav-link active"
+                  id="v-pills-home-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-home"
+                  aria-selected="true"
+                >
+                  <span class="icon icon-home"></span>
+                  Mening kurslarim
+                </button>
+                <button
+                  class="nav-link"
+                  id="v-pills-profile-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-profile"
+                  aria-selected="false"
+                >
+                  <span class="icon icon-polygon"></span>
+                  Barcha kurslar
+                </button>
+                <button
+                  class="nav-link"
+                  id="v-pills-messages-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-messages"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-messages"
+                  aria-selected="false"
+                >
+                  <span class="icon icon-label"></span>
+                  To’lovlar
+                </button>
+                <button
+                  class="nav-link"
+                  id="v-pills-settings-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-settings"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-settings"
+                  aria-selected="false"
+                >
+                  <span class="icon icon-setting"></span>
+                  Sozlamalar
+                </button>
+                <a href="#" class="close"><span>&rarr;</span>Chiqish</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-9">
+            <div class="navbar">
+              <div class="nav-item">
+                <div class="nav-link d-flex align-items-center">
+                  <p>Azizbek Egamberdiyev</p>
+                </div>
+              </div>
+              <div class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Uz
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item active" href="#">Uz</a></li>
+                  <li><a class="dropdown-item" href="#">Rus</a></li>
+                  <li><a class="dropdown-item" href="#">Eng</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-content" id="v-pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="v-pills-home"
+                role="tabpanel"
+                aria-labelledby="v-pills-home-tab"
+              >
+                <div class="resurs_title"><h1>MENING KURSLARIM</h1></div>
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="pills-home-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-home"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-home"
+                      aria-selected="true"
+                    >
+                      Offline kurslar
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-profile-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-profile"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-profile"
+                      aria-selected="false"
+                    >
+                      Online kurslar
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="pills-home"
+                    role="tabpanel"
+                    aria-labelledby="pills-home-tab"
+                  >
+                    <div class="course_info default">
+                      <h2>Kurs nomi</h2>
+                      <div class="d-flex">
+                        <h2>Boshlanish</h2>
+                        <h2>Tugash</h2>
+                      </div>
+                    </div>
+                    <div class="course_info">
+                      <h2>Web desigin (UI/UX)</h2>
+                      <div class="d-flex">
+                        <h2>01.02.2022</h2>
+                        <h2>01.04.2022</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-profile"
+                    role="tabpanel"
+                    aria-labelledby="pills-profile-tab"
+                  >
+                    <div class="course_info">
+                      <h2>Hali faollashtirilmagan!!!</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-profile"
+                role="tabpanel"
+                aria-labelledby="v-pills-profile-tab"
+              >
+                ...
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-messages"
+                role="tabpanel"
+                aria-labelledby="v-pills-messages-tab"
+              >
+                ...
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-settings"
+                role="tabpanel"
+                aria-labelledby="v-pills-settings-tab"
+              >
+                <div class="resurs_title"><h1>SOZLAMALAR</h1></div>
+                <div class="profile_photo">
+                  <img src="./icon/camera.png" alt="camera" />
+                  <p>Profilingiz uchun foto</p>
+                </div>
+                <div class="profile_content">
+                  <div class="profile_border">
+                    <p>Azizbek</p>
+                  </div>
+                  <div class="profile_border">
+                    <p>Egamberdiyev</p>
+                  </div>
+                </div>
+                <div class="profile_input">
+                  <h2>PAROL O’ZGARTIRISH</h2>
+                  <label for="password"></label>
+                  <input
+                    id="password"
+                    type="password"
+                    placeholder="Parolni kiritish"
+                  />
+                  <label for="newPassword"></label>
+                  <input
+                    id="newPassword"
+                    type="password"
+                    placeholder="Yangi parol"
+                  />
+                  <label for="newPassword1"></label>
+                  <input
+                    type="password"
+                    id="newPassword1"
+                    placeholder="Parol tasdig’i"
+                  />
+                  <div class="d-flex">
+                    <button class="btn_add">Saqlash</button>
+                    <button class="btn_delete">Profilni o’chirish</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+  <script src="../bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+</html>

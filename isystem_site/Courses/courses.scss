@@ -1,0 +1,128 @@
+@import "../global_styles/toRemConvertor";
+@import "../global_styles/fontStyle";
+@import "../global_styles/colorStyle";
+
+body {
+  font-family: "Mark Pro";
+  header {
+    background: linear-gradient(
+      to left,
+      $white 55%,
+      rgba(255, 207, 35, 0.1) 45%
+    );
+
+    .container {
+      background: $white !important;
+      .row {
+        .col-3 {
+          padding-top: toRem(60);
+          background: rgba(255, 207, 35, 0.1);
+          height: 100vh;
+          .logo {
+            margin-bottom: toRem(40);
+            img {
+              width: toRem(170);
+              height: toRem(30);
+            }
+          }
+          .nav {
+            width: toRem(330);
+            margin-right: toRem(135);
+            .nav-item {
+              .active {
+                color: $black !important;
+                background: transparent !important;
+                border-bottom: 2px solid $yellow !important;
+              }
+              .nav-link {
+                font-family: "Mark Pro Medium";
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 10px;
+                letter-spacing: 0.025em;
+                ////////////////
+                width: toRem(130);
+                color: $accent;
+                border-radius: unset;
+                padding: toRem(10) 0;
+                border-bottom: 2px solid $black;
+                transition: all 0.5s;
+              }
+            }
+          }
+        }
+        .col-9 {
+          .navbar {
+            display: flex;
+            justify-content: end;
+            padding: toRem(52) 0;
+            .nav-item {
+              &:hover > .nav-link {
+                color: $yellow !important;
+              }
+              .nav-link {
+                color: $black;
+                margin-left: toRem(48);
+                transition: 0.25s;
+              }
+              &.dropdown {
+                .dropdown-menu {
+                  padding: 0;
+                  min-width: toRem(30);
+                  background: transparent;
+                  border: toRem(1) solid $yellow;
+                  .dropdown-item {
+                    color: $black;
+                    &:hover {
+                      color: $black;
+                      background: $yellow;
+                    }
+                    &.active {
+                      background: transparent;
+                      &:hover {
+                        background: $yellow;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .course_content {
+            padding: 0 toRem(38);
+            .col-2,
+            .col-3 {
+              background: none;
+              padding: 0;
+              margin-right: toRem(100);
+              h1 {
+                font-family: "Mark Pro Bold";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 10px;
+                letter-spacing: 0.025em;
+                margin-bottom: toRem(30);
+                color: $black;
+              }
+              a {
+                text-decoration: none;
+                font-family: "Mark Pro Medium";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1rem;
+                line-height: toRem(10);
+                letter-spacing: 0.025em;
+                color: $black;
+                margin-bottom: 15px;
+                &:hover {
+                  transform: scale(1.1);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

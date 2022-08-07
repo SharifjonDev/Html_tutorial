@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit an aplication</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+    <link rel="stylesheet" href="../bootstrap-5.1.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./application.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="../Home/index.html"
+          ><img src="../Global_images/isystem_logo.svg" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="navbar-nav">
+            <div class="left-line">
+              <div class="nav-item">
+                <a class="nav-link" href="../Courses/courses.html">Kurslar</a>
+              </div>
+              <div class="nav-item">
+                <a class="nav-link" href="../About/about.html">Biz haqimizda</a>
+              </div>
+              <div class="nav-item">
+                <a class="nav-link" href="#">Bog'lanish</a>
+              </div>
+            </div>
+            <div class="right-line">
+              <div class="nav-item">
+                <a class="nav-link" href="../Entrance/Entrance.html"
+                  >Kirish <span>&rarr;</span></a
+                >
+              </div>
+              <div class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Uz
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item active" href="#">Uz</a></li>
+                  <li><a class="dropdown-item" href="#">Rus</a></li>
+                  <li><a class="dropdown-item" href="#">Eng</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="signUp_title">
+              <h2>Hoziroq ro’yxatdan o’ting!</h2>
+              <p>
+                Nimadan boshlashni, qaysi kurs sizga mos kelishini
+                bilmayapsizmi? Bizga murojaat qililng, sizga to’g’ri yo’lni
+                ko’rsatamiz.
+              </p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="signUp_information">
+              <img src="./img/header.png" alt="header" />
+              <form class="form_content">
+                <label for="name"></label>
+                <input
+                  required
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Ismingiz"
+                />
+                <label for="age"></label>
+                <input
+                  required
+                  id="age"
+                  name="age"
+                  type="number"
+                  placeholder="Yoshingiz"
+                />
+                <label for="phoneNumber"></label>
+                <input
+                  required
+                  id="phoneNumber"
+                  name="phoneNumber"
+                  type="number"
+                  placeholder="Telefon"
+                />
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Kursni tanlang</option>
+                  <option value="1">Foundation</option>
+                  <option value="2">SMM</option>
+                  <option value="3">Programming</option>
+                  <option value="4">Programming for kids</option>
+                  <option value="5">Data Science (AI/ML)</option>
+                  <option value="6">Backend</option>
+                  <option value="7">Frontend</option>
+                  <option value="8">Game Devolpment</option>
+                  <option value="9">Android Devolpment</option>
+                  <option value="10">Web Desigin (UI/UX)</option>
+                  <option value="11">Bootcamp (.NET)</option>
+                </select>
+              </form>
+              <a href="#">
+                <button class="btn_sent">
+                  Ariza yuborish <span>&rarr;</span>
+                </button>
+              </a>
+              <img class="img_footer" src="./img/footer.png" alt="footer" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-7">
+            <div class="footer_info">
+              <div class="footer_title">
+                <img src="../icons/logo.svg" alt="isystem_logo_footer" />
+                <a href="Tel:+998 99 882 60 60"> +998 99 882 60 60 </a>
+                <a href="Tel:+998 99 884 60 60"> +998 99 884 60 60 </a>
+              </div>
+              <div class="footer_link">
+                <a href="#">Ariza</a>
+                <a href="#">Bog’lanish</a>
+                <a href="#">Biz haqimizda</a>
+              </div>
+              <div class="footer_icons">
+                <div class="d-flex align-items-center">
+                  <span class="icon icon-instagram"></span>
+                  <a href="https://www.instagram.com/isystem.uz/">isystem.uz</a>
+                </div>
+                <div class="d-flex align-items-center">
+                  <span class="icon icon-facebook"></span>
+                  <a href="https://www.facebook.com/isystemjo/">isystem.uz</a>
+                </div>
+                <div class="d-flex align-items-center">
+                  <span class="icon icon-telegram"></span>
+                  <a href="#">isystem.uz</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="footer_location d-flex justify-content-end">
+              <img src="../icons/location.svg" alt="location" />
+              <a
+                href="https://www.google.ru/maps/place/iSystem+IT+academy/@41.3245741,69.3228332,17z/data=!3m1!4b1!4m5!3m4!1s0x38aef572e5842f55:0xa87fc261e04f75ea!8m2!3d41.3245741!4d69.3250272"
+                >Toshkent shahar Mirzo Ulugbek tumani Mustaqillik prospekti
+                Mirzo Ulugbek ko’ch. 54A</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="../bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+</html>

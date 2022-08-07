@@ -1,0 +1,612 @@
+@import "../global_styles/colorStyle";
+@import "../global_styles/fontStyle";
+@import "../global_styles/navbar";
+@import "../global_styles/iconMask";
+@import "../global_styles/button";
+@import "../global_styles/footer";
+
+.icon {
+  &.icon-sertificate {
+    mask-image: url("../Home/img/sertificate.svg");
+  }
+  &.icon_carousel_one {
+    mask-image: url("../Home/icon/carousel-line.svg");
+  }
+  &.icon_carousel_two {
+    mask-image: url("../Home/icon/carousel-line-2.svg");
+  }
+  &.icon_carousel_three {
+    mask-image: url("../Home/icon/carousel-line-3.svg");
+  }
+  &.icon_carousel_four {
+    mask-image: url("../Home/icon/carousel-line-4.svg");
+  }
+}
+
+body {
+  font-family: "Mark Pro";
+  .navbar {
+    background: linear-gradient(to right, $white 55%, $black 45%);
+    .right-line {
+      .nav-item {
+        .nav-link {
+          color: $white !important;
+        }
+      }
+    }
+  }
+
+  header {
+    position: relative;
+    padding-top: toRem(140);
+    padding-bottom: toRem(195);
+    background: linear-gradient(to right, $white 55%, $black 45%);
+    .container {
+      position: relative;
+      .row {
+        .col-12 {
+          h1 {
+            font-family: "Mark Pro Heavy";
+            font-weight: 800;
+            font-size: toRem(60);
+            line-height: toRem(76);
+            letter-spacing: 0.01em;
+            color: $black;
+            width: toRem(300);
+            margin-bottom: toRem(40);
+          }
+          .wave {
+            display: block;
+            width: toRem(91);
+            margin-bottom: toRem(36);
+          }
+          .btn_petition {
+            @include Button(
+              "Mark Pro Medium",
+              500,
+              17,
+              22,
+              $black,
+              $yellow,
+              8,
+              toRem(19) toRem(28),
+              toRem(16) toRem(28) toRem(22) toRem(28)
+            );
+          }
+        }
+      }
+      .icon-five {
+        position: absolute;
+        top: toRem(15);
+        left: toRem(314);
+      }
+      .code {
+        position: absolute;
+        top: toRem(165);
+        left: toRem(330);
+      }
+    }
+    .w {
+      position: absolute;
+      top: toRem(-56);
+      right: 0;
+      left: 60%;
+      width: 40%;
+      z-index: 0;
+    }
+    .codes {
+      position: absolute;
+      top: toRem(200);
+      left: 40%;
+    }
+    .person {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 100%;
+    }
+  }
+
+  .results {
+    background: $black;
+    padding: toRem(50) 0 toRem(70) 0;
+    .container {
+      position: relative;
+      .row {
+        .col-12 {
+          h3 {
+            color: $white;
+            font-size: toRem(25);
+            line-height: toRem(35);
+            letter-spacing: 0.025em;
+            margin-bottom: toRem(70);
+          }
+          .three {
+            .mini_box {
+              display: inline-block;
+              margin-right: toRem(50);
+              h1 {
+                font-family: "Mark Pro Medium";
+                font-weight: 500;
+                font-size: toRem(80);
+                line-height: toRem(35);
+                letter-spacing: 0.025em;
+                color: $yellow;
+                margin-bottom: toRem(20);
+              }
+              h4 {
+                font-style: Bold;
+                font-weight: 700;
+                font-size: 1rem;
+                line-height: toRem(35);
+                letter-spacing: 0.025em;
+                color: $white;
+                margin-bottom: 0;
+              }
+              .border_line {
+                width: toRem(170);
+                height: toRem(3.5);
+                background: $yellow;
+              }
+            }
+          }
+        }
+      }
+      .icon-sertificate {
+        position: absolute;
+        right: 0;
+        top: toRem(-100);
+        width: toRem(335);
+        height: toRem(340);
+        background: $white;
+      }
+    }
+  }
+
+  main {
+    padding: toRem(130) 0 toRem(80) 0;
+    .container {
+      .row {
+        .col-12 {
+          .direction_info {
+            color: $black;
+            h1 {
+              font-style: Bold;
+              font-weight: 700;
+              font-size: toRem(40);
+              line-height: toRem(20);
+              letter-spacing: 0.025em;
+              margin-bottom: toRem(40);
+            }
+            p {
+              width: 60%;
+              font-weight: 400;
+              font-size: toRem(25);
+              line-height: toRem(35);
+              letter-spacing: 0.025em;
+              margin-bottom: 0;
+            }
+          }
+        }
+        .course_lists {
+          display: grid;
+          grid-template-columns: auto auto;
+          row-gap: toRem(60);
+          column-gap: toRem(60);
+          margin: toRem(60) 0 toRem(50) 0;
+          .col-6 {
+            width: 100%;
+            height: toRem(245);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: $silver;
+            padding: toRem(50);
+            border-radius: toRem(10);
+
+            .course_title {
+              height: 100%;
+              position: relative;
+              h2 {
+                font-family: "Mark Pro Heavy";
+                font-weight: 800;
+                font-size: toRem(35);
+                letter-spacing: 0.025em;
+                color: $black;
+                width: toRem(240);
+              }
+              h3 {
+                position: absolute;
+                font-weight: 400;
+                font-size: toRem(24);
+                line-height: toRem(32);
+                letter-spacing: 0.025em;
+                margin-bottom: 0;
+                color: $dark;
+                bottom: 0;
+              }
+            }
+
+            img {
+              width: toRem(190);
+              height: toRem(130);
+              object-fit: cover;
+            }
+          }
+        }
+      }
+      h5 {
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: toRem(27);
+        margin: 0;
+      }
+    }
+  }
+
+  section {
+    .row {
+      .col-12 {
+        .black {
+          background: $black;
+          border-radius: toRem(10);
+          margin-bottom: toRem(80);
+          padding: toRem(60) toRem(50);
+
+          h1 {
+            color: $white;
+            font-weight: 700;
+            font-size: toRem(40);
+            line-height: toRem(27);
+            letter-spacing: 0.025em;
+            margin-bottom: toRem(50);
+          }
+          a {
+            text-decoration: none;
+            .btn-help {
+              @include Button(
+                "Mark Pro",
+                400,
+                17,
+                22,
+                $black,
+                $yellow,
+                8,
+                toRem(19) toRem(28),
+                toRem(19) toRem(25) toRem(19) toRem(31)
+              );
+              span {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+        .sertificate_content {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background: $yellow;
+          padding: toRem(50);
+          margin-bottom: toRem(80);
+          border-radius: toRem(10);
+          .sertificete_title {
+            color: $black;
+            h1 {
+              font-family: "Mark Pro Bold";
+              font-style: normal;
+              font-weight: 700;
+              font-size: toRem(40);
+              line-height: toRem(35);
+              letter-spacing: 0.025em;
+              margin-bottom: toRem(80);
+            }
+            p {
+              font-weight: 400;
+              font-size: 25px;
+              line-height: 35px;
+              width: toRem(400);
+              margin-bottom: toRem(180);
+            }
+          }
+          .icon-sertificate {
+            position: absolute;
+            top: toRem(225);
+            left: toRem(449);
+            width: toRem(135);
+            height: toRem(135);
+          }
+        }
+        h2 {
+          font-family: "Mark Pro Bold";
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 10px;
+          color: $black;
+          letter-spacing: 0.01em;
+          margin-bottom: toRem(75);
+        }
+      }
+      .learning_options {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        row-gap: toRem(40);
+        column-gap: toRem(40);
+        padding: 0 toRem(12);
+        margin-bottom: toRem(80);
+        .col-4 {
+          width: 100%;
+          color: $white;
+          background: $black;
+          padding-top: toRem(60);
+          border-radius: toRem(10);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          h1 {
+            font-weight: 700;
+            font-size: toRem(20);
+            line-height: toRem(27);
+            letter-spacing: 0.025em;
+            text-align: center;
+            width: toRem(224);
+            margin: auto;
+          }
+          h3 {
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: toRem(25);
+            letter-spacing: 0.025em;
+            padding: 0 toRem(50);
+            text-align: center;
+            margin: toRem(20) 0 toRem(30) 0;
+            width: 405px;
+          }
+        }
+      }
+    }
+    h4 {
+      font-family: "Mark Pro Bold";
+      font-weight: 700;
+      font-size: toRem(40);
+      line-height: toRem(10);
+      color: $black;
+      margin-bottom: toRem(70);
+    }
+  }
+
+  .carousels {
+    .container {
+      .row {
+        .carousel {
+          .carousel-indicators {
+            bottom: toRem(-45) !important;
+            button {
+              width: toRem(50);
+              height: toRem(4);
+              border: none;
+              opacity: 1;
+              background: $black;
+              &.active {
+                background: $yellow;
+              }
+            }
+          }
+          .carousel-inner {
+            .carousel-item {
+              .carousel-div {
+                width: 23%;
+                color: $black;
+                background: $white;
+                img {
+                  width: 100%;
+                  border-radius: toRem(10);
+                  margin-bottom: toRem(25);
+                }
+                h1 {
+                  width: 90%;
+                  font-family: "Mark Pro Heavy";
+                  font-weight: 800;
+                  font-size: toRem(20);
+                  line-height: toRem(25);
+                  padding-bottom: toRem(30);
+                  border-bottom: toRem(1) solid $black;
+                  margin-bottom: toRem(20);
+                }
+                h2 {
+                  font-family: "Mark Pro Medium";
+                  font-weight: 500;
+                  font-size: toRem(17);
+                  line-height: toRem(25);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .container-fluid {
+      padding: 0;
+      margin-top: toRem(95);
+      overflow: hidden !important;
+      margin-bottom: toRem(65);
+      .row {
+        .owl-1 {
+          border-top: toRem(2) solid $black;
+          border-bottom: toRem(1) solid $black;
+          .item {
+            padding: toRem(20) 0;
+            h1 {
+              display: flex;
+              align-items: center;
+              margin-bottom: 0;
+              ///////////
+              font-family: "Mark Pro Bold";
+              font-weight: 700;
+              font-size: toRem(50);
+              line-height: toRem(27);
+              color: $black;
+              span {
+                width: toRem(30);
+                height: toRem(30);
+                margin-right: toRem(15);
+              }
+            }
+          }
+        }
+        .owl-2 {
+          border-top: toRem(1) solid $black;
+          border-bottom: toRem(1) solid $black;
+          .item {
+            padding: toRem(18) 0;
+            h1 {
+              display: flex;
+              align-items: center;
+              margin-bottom: 0;
+              //////////
+              font-family: "Mark Pro Bold";
+              font-weight: 700;
+              font-size: toRem(40);
+              line-height: toRem(27);
+              color: $black;
+              span {
+                width: toRem(35);
+                height: toRem(40);
+                margin-right: toRem(15);
+              }
+            }
+          }
+        }
+        .owl-3 {
+          border-top: toRem(1) solid $black;
+          border-bottom: toRem(1) solid $black;
+          .item {
+            padding: toRem(19) 0;
+            h1 {
+              display: flex;
+              align-items: center;
+              margin-bottom: 0;
+              //////////////
+              font-family: "Mark Pro Bold";
+              font-weight: 700;
+              font-size: toRem(30);
+              line-height: toRem(27);
+              color: $black;
+              span {
+                width: toRem(27);
+                height: toRem(27);
+                margin-right: toRem(10);
+              }
+            }
+          }
+        }
+        .owl-4 {
+          border-top: toRem(1) solid $black;
+          border-bottom: toRem(2) solid $black;
+          .item {
+            padding: toRem(18) 0;
+            h1 {
+              display: flex;
+              align-items: center;
+              margin-bottom: 0;
+              ////////////////
+              font-family: "Mark Pro Bold";
+              font-weight: 700;
+              font-size: toRem(20);
+              line-height: toRem(27);
+              color: $black;
+              span {
+                width: toRem(13);
+                height: toRem(13);
+                margin-right: toRem(6);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .forms {
+    background: $black;
+    padding: toRem(100) 0;
+    .container {
+      background: $white;
+      border-radius: toRem(10);
+      padding: toRem(50);
+      .row {
+        .col-6 {
+          color: $black;
+          h1 {
+            font-family: "Mark Pro Medium";
+            font-weight: 500;
+            font-size: toRem(25);
+            line-height: toRem(28);
+            letter-spacing: 0.025em;
+            margin-bottom: toRem(32);
+          }
+          p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 25px;
+            margin-bottom: 0;
+            width: toRem(451);
+          }
+          form {
+            .name,
+            .email,
+            .number {
+              padding: toRem(20) toRem(15);
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 10px;
+              letter-spacing: 0.025em;
+              color: $black;
+              background: #f3f3f3;
+              outline: none;
+              border-radius: toRem(5);
+              border: 0.3px solid #808080;
+              &::placeholder {
+                color: #7f7f7f;
+              }
+            }
+            .name {
+              width: toRem(500);
+              margin-bottom: toRem(10);
+            }
+            div {
+              width: toRem(500);
+              display: flex;
+              .number {
+                margin-right: toRem(20);
+                width: 100%;
+              }
+              .email {
+                width: 100%;
+              }
+            }
+            button {
+              width: toRem(240);
+              height: toRem(50);
+              background: $black;
+              color: $white;
+              border: none;
+              border-radius: toRem(10);
+              margin-top: toRem(20);
+              padding-left: 0;
+              transition: all 0.25s;
+              margin-left: toRem(260);
+              &:hover {
+                padding-left: toRem(5);
+                color: $yellow;
+              }
+              span {
+                color: $yellow;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+@import "./colorStyle";
+@import "./fontStyle";
+@import "./toRemConvertor";
+body {
+  .navbar {
+    padding-bottom: 0;
+    padding-top: toRem(60);
+    .container {
+      .navbar-brand {
+        width: toRem(170);
+        height: auto;
+        margin-right: toRem(45);
+        padding: 0;
+      }
+      .collapse {
+        .navbar-nav {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .left-line {
+            display: flex;
+            .nav-item {
+              position: relative;
+              margin-right: toRem(60);
+              .nav-link {
+                font-family: "Mark Pro";
+                font-weight: 400;
+                font-size: toRem(16);
+                line-height: toRem(20);
+                padding: 0;
+                color: $black;
+                &::before {
+                  top: toRem(5);
+                  content: "";
+                  position: absolute;
+                  width: 0%;
+                  height: 100%;
+                  border-bottom: toRem(3) solid $yellow;
+                  transition: all 0.25s;
+                  left: 50%;
+                  cursor: pointer;
+                }
+                &:hover::before {
+                  width: 100%;
+                  left: 0;
+                }
+              }
+            }
+          }
+          .right-line {
+            display: flex;
+            z-index: 1;
+            font-family: "Mark Pro";
+            .nav-item {
+              margin-left: toRem(60);
+              &:hover > .nav-link {
+                color: $yellow !important;
+              }
+              .nav-link {
+                color: $black;
+                transition: 0.25s;
+              }
+              &.dropdown {
+                .dropdown-menu {
+                  padding: 0;
+                  min-width: toRem(30);
+                  background: transparent;
+                  border: toRem(1) solid $yellow;
+                  .dropdown-item {
+                    color: $white;
+                    &:hover {
+                      color: $black;
+                      background: $yellow;
+                    }
+                    &.active {
+                      background: transparent;
+                      &:hover {
+                        background: $yellow;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

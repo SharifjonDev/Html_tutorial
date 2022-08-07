@@ -1,0 +1,308 @@
+@import "../global_styles/colorStyle";
+@import "../global_styles/fontStyle";
+@import "../global_styles/iconMask";
+@import "../global_styles/toRemConvertor";
+@import "../global_styles/button";
+
+.icon {
+  background: $accent;
+  margin-right: toRem(30.88);
+  &.icon-home {
+    mask-image: url("../icons/home.svg");
+    width: toRem(28.12);
+    height: toRem(25);
+  }
+
+  &.icon-polygon {
+    mask-image: url("../About/icon/Vector.svg");
+    width: toRem(25);
+    height: toRem(25);
+  }
+
+  &.icon-label {
+    mask-image: url("../icons/label.svg");
+    width: toRem(25);
+    height: toRem(33.34);
+  }
+
+  &.icon-setting {
+    mask-image: url("../icons/setting.svg");
+    width: toRem(23.56);
+    height: toRem(25);
+  }
+
+  &.icon-people {
+    mask-image: url("../icons/people.svg");
+    width: toRem(15.68);
+    height: toRem(17.92);
+  }
+}
+
+header {
+  font-family: "Mark Pro";
+  background: linear-gradient(to left, $white 55%, #fafafa 45%);
+  .container {
+    background-color: $white !important;
+    .row {
+      .col-3 {
+        padding-top: toRem(60);
+        background: #fafafa;
+        .logo {
+          margin-bottom: toRem(40);
+          img {
+            width: toRem(170);
+            height: toRem(30);
+          }
+        }
+        .d-flex {
+          .nav {
+            .active {
+              span {
+                background: $yellow;
+              }
+              color: $black;
+              background: none;
+              border-radius: unset;
+              border-bottom: 2px solid $yellow !important;
+            }
+            .nav-link {
+              font-family: "Mark Pro Bold";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 10px;
+              letter-spacing: 0.025em;
+              color: $black;
+              padding: toRem(8.5) 0;
+              margin-bottom: toRem(38.5);
+              border: none;
+              text-align: left;
+            }
+            .close {
+              text-decoration: none;
+              font-family: "Mark Pro Medium";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 10px;
+              letter-spacing: 0.025em;
+              color: $accent;
+              margin: toRem(570) 0 toRem(56) 0;
+              span {
+                font-size: toRem(20);
+                margin-right: toRem(34);
+              }
+            }
+          }
+        }
+      }
+      .col-9 {
+        .navbar {
+          display: flex;
+          justify-content: end;
+          padding: toRem(60) 0 toRem(52) 0;
+          .nav-item {
+            .nav-link {
+              font-weight: 400;
+              font-size: 1rem;
+              line-height: toRem(20);
+              color: $black;
+              padding: 0;
+              margin-left: toRem(80);
+              p {
+                margin: 0;
+              }
+            }
+            &.dropdown {
+              .dropdown-menu {
+                padding: 0;
+                min-width: toRem(30);
+                background: transparent;
+                border: toRem(1) solid $yellow;
+                .dropdown-item {
+                  color: $black;
+                  &:hover {
+                    color: $black;
+                    background: $yellow;
+                  }
+                  &.active {
+                    background: transparent;
+                    &:hover {
+                      background: $yellow;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .tab-content {
+          padding-left: toRem(50);
+          .tab-pane {
+            .resurs_title {
+              h1 {
+                font-family: "Mark Pro Bold";
+                font-style: normal;
+                font-weight: 700;
+                font-size: toRem(40);
+                line-height: toRem(10);
+                letter-spacing: 0.025em;
+                color: $black;
+                margin-bottom: toRem(100);
+              }
+            }
+            .nav {
+              .nav-item {
+                margin-bottom: toRem(30);
+                .active {
+                  color: $black !important;
+                  background: transparent;
+                  border-bottom: 3px solid $yellow !important;
+                  border-radius: unset;
+                  padding: toRem(11.1) 0 !important;
+                }
+                .nav-link {
+                  font-family: "Mark Pro Medium";
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 1rem;
+                  line-height: toRem(10);
+                  letter-spacing: 0.025em;
+                  color: $accent;
+                  padding: toRem(12) 0;
+                  border-bottom: 1px solid $black;
+                  border-radius: unset;
+                  width: toRem(130);
+                }
+              }
+            }
+            .tab-content {
+              padding: 0;
+              .tab-pane {
+                width: 100%;
+                .course_info {
+                  display: flex;
+                  justify-content: space-around;
+                  border-bottom: 1px solid $accent;
+                  h2 {
+                    font-family: "Mark Pro Medium";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: toRem(10);
+                    letter-spacing: 0.025em;
+                    color: $black;
+                    margin: toRem(30) 0 toRem(8) 0;
+                  }
+                  .d-flex {
+                    h2 {
+                      margin-left: toRem(82);
+                    }
+                  }
+                }
+                .default {
+                  h2 {
+                    color: $accent;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .profile_photo {
+          display: flex;
+          align-items: center;
+          p {
+            font-family: "Mark Pro Medium";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: toRem(10);
+            letter-spacing: 0.025em;
+            color: $accent;
+            margin: 0 0 0 toRem(50);
+          }
+        }
+        .profile_content {
+          margin: toRem(80) 0;
+          border-top: 1px solid $accent;
+          .profile_border {
+            padding: toRem(35) 0 toRem(15) 0;
+            border-bottom: 1px solid $accent;
+            p {
+              font-family: "Mark Pro Medium";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 1rem;
+              line-height: toRem(10);
+              letter-spacing: 0.025em;
+              color: $black;
+              margin: 0;
+            }
+          }
+        }
+        .profile_input {
+          h2 {
+            font-family: "Mark Pro Bold";
+            font-style: normal;
+            font-weight: 700;
+            font-size: toRem(20);
+            line-height: toRem(10);
+            letter-spacing: 0.025em;
+            color: $black;
+            margin-bottom: toRem(25);
+          }
+          label {
+            display: none;
+          }
+          input {
+            border: none;
+            outline: none;
+            border-bottom: 1px solid $accent;
+            padding: toRem(35) 0 toRem(15) 0;
+            width: 100%;
+            ///////////
+            font-family: "Mark Pro Medium";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: toRem(10);
+            letter-spacing: 0.025em;
+            color: $black;
+          }
+          .d-flex {
+            margin-top: toRem(60);
+            .btn_add {
+              @include Button(
+                "Mark Pro Medium",
+                500,
+                16,
+                10,
+                $white,
+                $yellow,
+                10,
+                toRem(15) toRem(52),
+                toRem(15) toRem(52)
+              );
+            }
+            .btn_delete {
+              @include Button(
+                "Mark Pro Medium",
+                500,
+                16,
+                10,
+                $black,
+                transparent,
+                10,
+                toRem(15) toRem(19.5),
+                toRem(15) toRem(19.5)
+              );
+              border: 1px solid $black;
+              margin-left: toRem(20);
+            }
+          }
+        }
+      }
+    }
+  }
+}

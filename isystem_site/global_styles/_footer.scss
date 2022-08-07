@@ -1,0 +1,107 @@
+@import "./colorStyle";
+@import "./fontStyle";
+@import "./toRemConvertor";
+@import "./iconMask";
+
+.icon {
+  &.icon-instagram {
+    mask-image: url("../icons/insta.svg");
+  }
+  &.icon-facebook {
+    mask-image: url("../icons/face.svg");
+  }
+  &.icon-telegram {
+    mask-image: url("../icons/tele.svg");
+  }
+}
+
+body {
+  font-family: "Mark Pro";
+  footer {
+    padding: toRem(50) 0 toRem(38) 0;
+    background-color: $yellow;
+    .container {
+      .row {
+        .col-7 {
+          .footer_info {
+            display: flex;
+            justify-content: space-between;
+            .footer_title {
+              display: flex;
+              flex-direction: column;
+              img {
+                width: toRem(124);
+                height: toRem(44.47);
+                margin-bottom: toRem(15.53);
+                object-fit: none;
+              }
+              a {
+                text-decoration: none;
+                font-style: normal;
+                font-weight: normal;
+                font-size: toRem(15);
+                line-height: toRem(25);
+                letter-spacing: 0.025em;
+                color: $dark;
+              }
+            }
+            .footer_link {
+              display: flex;
+              flex-direction: column;
+              a {
+                text-decoration: none;
+                font-style: normal;
+                font-weight: normal;
+                font-size: toRem(15);
+                line-height: toRem(25);
+                letter-spacing: 0.025em;
+                margin-bottom: 1rem;
+                color: $dark;
+              }
+            }
+            .footer_icons {
+              .d-flex {
+                margin-bottom: toRem(13);
+                span {
+                  width: toRem(20);
+                  height: toRem(20);
+                  background: $black;
+                }
+                a {
+                  text-decoration: none;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 1rem;
+                  line-height: toRem(28);
+                  letter-spacing: 0.025em;
+                  margin-left: toRem(15);
+                  color: $dark;
+                }
+              }
+            }
+          }
+        }
+        .col-5 {
+          .footer_location {
+            img {
+              width: toRem(91.34);
+              height: toRem(87.56);
+            }
+            a {
+              font-family: Poppins-Regular, sans-serif;
+              text-decoration-line: underline;
+              font-style: normal;
+              font-weight: normal;
+              font-size: toRem(15);
+              line-height: toRem(25);
+              letter-spacing: 0.025em;
+              width: toRem(192);
+              color: $dark;
+              margin-left: toRem(48.57);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,515 @@
+@import "../global_styles/button";
+@import "../global_styles/colorStyle";
+@import "../global_styles/fontStyle";
+@import "../global_styles/navbar";
+@import "../global_styles/footer";
+@import "../global_styles/iconMask";
+@import "../global_styles/toRemConvertor";
+
+.icon {
+  &.icon-vector_one {
+    mask-image: url("./icon/Vector.svg");
+    width: toRem(20);
+    height: toRem(20);
+  }
+
+  &.icon-vector_two {
+    mask-image: url("./icon/vector1.svg");
+    width: toRem(25);
+    height: toRem(20);
+  }
+
+  &.icon-vector_three {
+    mask-image: url("./icon/Vector2.svg");
+    width: toRem(17.5);
+    height: toRem(20);
+  }
+}
+
+body {
+  font-family: "Mark Pro";
+  header {
+    .container {
+      .row {
+        .col-6 {
+          .about_title {
+            position: relative;
+            .ellipse {
+              position: absolute;
+              top: toRem(100);
+              left: toRem(112);
+              width: toRem(163);
+              height: toRem(161);
+              filter: blur(toRem(140));
+              background: $yellow;
+            }
+            .square_position {
+              position: absolute;
+              top: toRem(96);
+              left: toRem(386);
+              span {
+                width: toRem(42);
+                height: toRem(42);
+                background: $black;
+              }
+            }
+            h1 {
+              font-family: "Mark Pro Heavy";
+              font-style: normal;
+              font-weight: 800;
+              font-size: toRem(60);
+              line-height: toRem(76);
+              width: toRem(354);
+              margin: toRem(50) 0 0 0;
+              color: $black;
+              i {
+                font-style: normal;
+                color: $yellow;
+              }
+            }
+            .about_info {
+              width: toRem(354);
+              h5 {
+                font-family: "Mark Pro Bold";
+                font-style: normal;
+                font-weight: bold;
+                font-size: toRem(24);
+                line-height: toRem(24);
+                letter-spacing: 0.025em;
+                margin: 0;
+                color: $black;
+              }
+              .border_rectangle {
+                width: toRem(66.74);
+                height: toRem(15.03);
+                margin-left: toRem(10);
+                background: $yellow;
+              }
+            }
+            p {
+              font-style: normal;
+              font-weight: normal;
+              font-size: toRem(20);
+              line-height: toRem(25);
+              letter-spacing: 0.025em;
+              width: toRem(618);
+              color: $black;
+              margin: toRem(51) 0 toRem(60) 0;
+            }
+          }
+        }
+        .col-4 {
+          display: flex;
+          justify-content: end;
+          .about_logo {
+            img {
+              width: toRem(360);
+              height: toRem(370);
+            }
+          }
+        }
+        .col-12 {
+          width: 100%;
+          height: toRem(250);
+          box-sizing: border-box;
+          #video_part {
+            width: 100%;
+            height: toRem(250);
+            object-fit: contain;
+            background: $dark;
+            border-radius: toRem(9.9375);
+            border: 1px solid $black;
+          }
+        }
+      }
+    }
+  }
+
+  .learn_pragramm {
+    padding: toRem(130) 0;
+    .container {
+      .row {
+        .col-4 {
+          .learn_title {
+            h2 {
+              font-family: "Mark Pro Bold";
+              font-weight: 700;
+              font-size: toRem(40);
+              line-height: toRem(51);
+              letter-spacing: 0.025em;
+              width: toRem(300);
+              margin: 0;
+              color: $black;
+            }
+          }
+        }
+        .col-7 {
+          .learn_boxes {
+            display: grid;
+            grid-template-columns: auto auto;
+            row-gap: toRem(50);
+            column-gap: toRem(50);
+            .learn_crate {
+              width: toRem(348);
+              height: toRem(150);
+              border-radius: toRem(10);
+              background: $yellow;
+              padding: toRem(40) 0 toRem(53) toRem(30);
+              .d-flex {
+                span {
+                  margin-right: toRem(20);
+                  background: $black;
+                }
+                h1 {
+                  font-family: "Mark Pro Bold";
+                  font-weight: 700;
+                  font-size: toRem(60);
+                  line-height: toRem(20);
+                  letter-spacing: 0.025em;
+                  color: $white;
+                }
+              }
+              p {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 2rem;
+                letter-spacing: 0.025em;
+                margin: 0 0 0 toRem(40);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    .container {
+      .founders_header {
+        width: 100%;
+        height: toRem(1058);
+        padding: toRem(70);
+        border-radius: toRem(10);
+        color: $white;
+        background: $black;
+        .row {
+          .col-8 {
+            .title_text {
+              h2 {
+                font-family: "Mark Pro Bold";
+                font-weight: 700;
+                font-size: toRem(40);
+                line-height: toRem(51);
+                margin-bottom: toRem(124);
+              }
+              p {
+                font-weight: 400;
+                font-size: toRem(20);
+                line-height: toRem(25);
+                letter-spacing: 0.025em;
+                margin: 0;
+                width: toRem(662);
+              }
+            }
+          }
+          .col-4 {
+            .title_logo {
+              width: 100%;
+              display: flex;
+              justify-content: end;
+              img {
+                width: toRem(280);
+                height: toRem(250px);
+                object-fit: contain;
+              }
+            }
+          }
+          .col-12 {
+            display: flex;
+            justify-content: space-between;
+            margin-top: toRem(80);
+            .founder_info {
+              background: transparent;
+              .border-warning {
+                width: toRem(300);
+                border-radius: toRem(10);
+                img {
+                  width: 100%;
+                  height: toRem(384);
+                }
+              }
+              h4 {
+                font-family: "Mark Pro Heavy";
+                font-style: normal;
+                font-weight: 800;
+                font-size: toRem(20);
+                line-height: toRem(25);
+                letter-spacing: 0.025em;
+                width: toRem(195);
+                margin: toRem(36) 0 0 0;
+              }
+              hr {
+                opacity: 1;
+                background: $white;
+                border: 1px solid $white;
+                margin: toRem(24) 0;
+              }
+              p {
+                font-family: "Mark Pro Medium";
+                font-style: normal;
+                font-weight: 500;
+                font-size: toRem(17);
+                line-height: toRem(25);
+                letter-spacing: 0.025em;
+                width: toRem(156);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .carusel {
+    .row {
+      .col-12 {
+        h1 {
+          font-family: Poppins-Bold;
+          font-size: torem(40);
+          line-height: torem(32);
+          letter-spacing: 0.025em;
+          margin-bottom: torem(30);
+        }
+        p {
+          font-family: Poppins-Regular;
+          font-size: torem(20);
+          line-height: torem(32);
+          letter-spacing: 0.025em;
+          margin-bottom: torem(50);
+        }
+        .owl-carousel {
+          .item {
+            border-radius: torem(10);
+            overflow: hidden;
+            object-fit: cover;
+            img {
+              width: torem(700);
+              height: torem(400);
+            }
+          }
+          .owl-nav {
+            margin-top: torem(45);
+            color: #000000;
+            .owl-prev {
+              margin: 0 25px;
+              transform: scale(3);
+              &:hover {
+                color: $accent;
+                background: #ffffff;
+              }
+            }
+            .owl-next {
+              transform: scale(3);
+              &:hover {
+                color: $accent;
+                background: #ffffff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .our_team {
+    padding: toRem(80) 0;
+    .container {
+      .row {
+        .col-12 {
+          .team_title {
+            h2 {
+              font-family: "Poppins", sans-serif;
+              font-style: normal;
+              font-weight: bold;
+              font-size: toRem(40);
+              line-height: 2rem;
+              letter-spacing: 0.025em;
+              margin-bottom: toRem(60);
+              color: $black;
+            }
+          }
+          .team_about {
+            display: flex;
+            justify-content: space-between;
+            .team_card {
+              width: toRem(270);
+              color: $black;
+              img {
+                width: 100%;
+                height: toRem(350);
+                object-fit: cover;
+                border-radius: toRem(10);
+              }
+              h4 {
+                font-family: "Mark Pro Heavy";
+                font-style: normal;
+                font-weight: 800;
+                font-size: toRem(20);
+                line-height: toRem(25);
+                letter-spacing: 0.025em;
+                ///////////////////
+                width: toRem(130);
+                margin: toRem(25) 0 0 0;
+              }
+              hr {
+                opacity: 1;
+                border: 1px solid $black;
+                margin: toRem(30) 0 toRem(20) 0;
+              }
+              p {
+                font-family: "Mark Pro Medium";
+                font-style: normal;
+                font-weight: 500;
+                font-size: toRem(17);
+                line-height: toRem(25);
+                letter-spacing: 0.025em;
+                //////////////
+                margin-bottom: toRem(19);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section {
+    .location_content {
+      background: $black;
+      padding: toRem(70) 0;
+      .container {
+        .row {
+          .col-12 {
+            .location_title {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              h2 {
+                font-family: "Mark Pro Bold";
+                font-style: normal;
+                font-weight: bold;
+                font-size: toRem(40);
+                line-height: toRem(51);
+                letter-spacing: 0.025em;
+                color: $white;
+              }
+              #map_icon {
+                width: toRem(150);
+                height: toRem(133.33);
+              }
+              #map_img {
+                width: toRem(350);
+                height: toRem(350);
+              }
+            }
+            .map_card {
+              width: 100%;
+              height: toRem(460);
+              border-radius: toRem(10);
+              border: toRem(15) solid $yellow;
+              overflow: hidden;
+              margin-top: toRem(60);
+              iframe {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .forms {
+      background: $black;
+      padding-bottom: toRem(101);
+      .container {
+        background: $white;
+        border-radius: toRem(10);
+        padding: toRem(50);
+        .row {
+          .col-6 {
+            color: $black;
+            h1 {
+              font-family: "Mark Pro Medium";
+              font-weight: 500;
+              font-size: toRem(25);
+              line-height: toRem(28);
+              letter-spacing: 0.025em;
+              margin-bottom: toRem(32);
+            }
+            p {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 25px;
+              margin-bottom: 0;
+              width: toRem(451);
+            }
+            form {
+              .name,
+              .email,
+              .number {
+                padding: toRem(20) toRem(15);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 10px;
+                letter-spacing: 0.025em;
+                color: $black;
+                background: #f3f3f3;
+                outline: none;
+                border-radius: toRem(5);
+                border: 0.3px solid #808080;
+                &::placeholder {
+                  color: #7f7f7f;
+                }
+              }
+              .name {
+                width: toRem(500);
+                margin-bottom: toRem(10);
+              }
+              div {
+                width: toRem(500);
+                display: flex;
+                .number {
+                  margin-right: toRem(20);
+                  width: 100%;
+                }
+                .email {
+                  width: 100%;
+                }
+              }
+              button {
+                width: toRem(240);
+                height: toRem(50);
+                background: $black;
+                color: $white;
+                border: none;
+                border-radius: toRem(10);
+                margin-top: toRem(20);
+                padding-left: 0;
+                transition: all 0.25s;
+                margin-left: toRem(260);
+                &:hover {
+                  padding-left: toRem(5);
+                  color: $yellow;
+                }
+                span {
+                  color: $yellow;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

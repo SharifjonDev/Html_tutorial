@@ -1,0 +1,127 @@
+@import "../global_styles/toRemConvertor";
+@import "../global_styles/fontStyle";
+@import "../global_styles/navbar";
+@import "../global_styles/button";
+@import "../global_styles/colorStyle";
+
+body {
+  header {
+    padding-top: toRem(170);
+    padding-bottom: toRem(300);
+    .container {
+      .row {
+        .col-5 {
+          .login_content {
+            width: toRem(400);
+            background: #fafafa;
+            .login_header {
+              display: flex;
+              flex-direction: column;
+              padding: toRem(35) toRem(50) toRem(28) toRem(50);
+              h5 {
+                font-family: "Mark Pro Medium";
+                font-style: normal;
+                font-weight: 500;
+                font-size: toRem(20);
+                line-height: toRem(25);
+                margin-bottom: toRem(8);
+                color: $black;
+              }
+              input {
+                border: none;
+                outline: none;
+                margin-top: toRem(40);
+                padding-bottom: toRem(9);
+                background: transparent;
+                border-bottom: 0.7px solid rgba(127, 127, 127, 0.5);
+                //Text style
+                font-family: "Mark Pro Medium";
+                font-style: normal;
+                font-weight: 500;
+                font-size: toRem(15);
+                line-height: toRem(19);
+                color: $black;
+              }
+              label {
+                color: $yellow;
+              }
+              .d-flex {
+                input {
+                  margin: toRem(25) 0 toRem(38) 0;
+                }
+                p {
+                  font-family: "Mark Pro";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: toRem(14);
+                  line-height: toRem(18);
+                  color: $accent;
+                  margin: 0 0 toRem(11) toRem(8);
+                }
+              }
+              .btn_entrance {
+                @include Button(
+                  "Mark Pro",
+                  400,
+                  15,
+                  none,
+                  $black,
+                  $yellow,
+                  10,
+                  toRem(20),
+                  toRem(20)
+                );
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                span {
+                  font-size: toRem(25);
+                  color: $white;
+                }
+              }
+              a {
+                text-decoration: none;
+                font-family: "Mark Pro Medium";
+                font-style: normal;
+                font-weight: 500;
+                font-size: toRem(14);
+                line-height: toRem(18);
+                padding-top: toRem(10);
+                text-align: center;
+                color: $accent;
+              }
+            }
+            .login_footer {
+              text-align: center;
+              background: $silver;
+              padding: toRem(29) 0 toRem(22) 0;
+              a {
+                font-family: "Mark Pro Medium";
+                font-style: normal;
+                font-weight: 500;
+                font-size: toRem(14);
+                line-height: toRem(18);
+                text-decoration: none;
+                color: $accent;
+                margin-bottom: toRem(6);
+              }
+              .sign_up {
+                font-size: toRem(15);
+                line-height: toRem(19);
+                color: $yellow;
+              }
+            }
+          }
+        }
+        .col-5 {
+          .login_img {
+            img {
+              width: toRem(500);
+              height: toRem(500);
+            }
+          }
+        }
+      }
+    }
+  }
+}
